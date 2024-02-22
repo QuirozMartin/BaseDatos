@@ -1,0 +1,340 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Variables de tipo de fuente */
+:root{
+  --fuente-titulos:"Comfortaa", sans-serif;
+  --fuente-texto:"Montserrat", sans-serif;
+
+
+}
+
+
+
+body {
+  /* font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace; */
+  font-family:var(--fuente-texto);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  /* height: 100vh; */
+  margin: 0;
+}
+  /*---------------------- SECCIÓN-1 ----------------------------------------*/
+/* -------HEADER------- */
+header{
+  height: 5rem;
+  width: 100%;
+  display:flex;
+}
+
+.header_info{
+width: 30%;
+display: flex;
+align-items: center;
+justify-content:center
+}
+
+.header_info_div{
+display: flex;
+align-items: center;
+justify-content:center;
+background-color: black;
+color: white;
+border-radius:1.6rem ;
+overflow: hidden;
+box-shadow: none;
+border: 4px solid black;
+}
+
+.header_info_text{
+  font-size: 0.6rem;
+  font-weight: 900;
+  width: 6rem;
+  height: 2.2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.header_info_text:hover{
+  /* background-color:rgb(235, 235, 235); */
+background-color: white;
+color: black;
+border-radius: 1.6rem;
+
+}
+
+.header_title{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-titulos);
+
+}
+
+.header_title p {
+  color:#F9A826;
+  font-size:2rem;
+  font-weight:bolder;
+}
+
+
+.hedaer_info2{
+  width: 30%;
+}
+
+/* Termina CSS de header */
+.eslogan{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  margin:6rem 0 4rem 0;
+  font-size: 5rem;
+  width: 60rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.eslogan_2{
+  margin-bottom: 10rem;
+  width: 30rem;
+  text-align: center;
+}
+
+/*--------------------- SECCION-2------------------- */
+.container_central {
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+  display: flex;
+  width: 80%;
+}
+
+.container_CentralInput{
+  /* background-color: yellow; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fuente-titulos);
+  text-align: center;
+}
+.container_CentralImagen{
+  width: 40%;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+
+.container_CentralImagen img{
+  height: auto;
+  width: 20rem;
+}
+.container_CentralInput div {
+  margin: 0 0 1rem 0;
+}
+
+.input_1 {
+  border-radius: 0.5rem;
+  border: 0.12rem solid #ccc;
+  width: 20rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.container_CentralBtn{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 2.5rem;
+  width:20rem;
+  background-color: black;
+  border-radius: 1.25rem;
+}
+
+.container_CentralBtn button {
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color:black;
+  width: 50%;
+  border:none;
+  color: white;
+}
+
+.container_CentralBtn button:hover{
+background-color: white;
+color:black;
+border: 4px solid black;
+}
+
+#borrarBaseDatos:hover{
+  background-color:#F9A826;
+}
+
+/* --------Sección 3---------*/
+/* -----CONTROL ALUMNO----- */
+
+h3{
+  font-size: 1rem;
+}
+.container_seccion3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_central2 {
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border:0.5rem solid rgb(235, 235, 235);
+}
+.input_2{
+  border-radius: 0.5rem;
+  border: 0.12rem solid #ccc;
+  width: 10rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.btnS3{
+  background-color: black;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-family: var(--fuente-texto);
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+.labelS3{
+text-align: center;
+font-family: var(--fuente-titulos);
+
+}
+#miMenu {
+  width:10rem;
+}
+
+.container_InscribirClase,
+.container_AsignarCalif,.container_AsignarGrupo {
+  display: flex;
+}
+
+.container_InscribirClase div label,
+.container_AsignarCalif div label,.container_AsignarGrupo div label {
+  display: block;
+}
+
+.container_AsignarCalif div,.container_AsignarGrupo div {
+  margin: 1rem;
+}
+
+.container_InscribirClase div {
+  margin: 1rem;
+}
+
+
+
+/* Tabla de renderizado */
+table{
+  border-collapse: separate;
+  border-spacing: 1rem;
+  font-family: var(--fuente-texto);
+  font-weight: 400;
+}
+h2{
+  text-align: center;
+  margin:2rem 0 1rem 0;
+}
+
+h3{
+font-weight:500;
+margin-bottom: 0.4rem;
+}
+
+.table_inputB{
+  width: 40%;
+  border-radius: 1rem;
+  border: 0.1rem solid #ccc;
+}
+
+.input_PromedioOrdenar{
+  background-color: #F9A826;
+  border: 0.1rem solid #F9A826;
+}
+
+.BtnBuscarTabla{
+  width: 3.5rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #F9A826;
+  background-color:#F9A826;
+}
+
+.input_PromedioOrdenar option {
+  background-color: white;
+  border: none;
+}
+
+.render_TablaContainer{
+  margin-bottom: 10rem;
+}
+
+
+th{
+  width: 15rem;
+  text-align: center;
+}
+
+td{
+  /* background-color: blue; */
+  padding: 0.5 rem;
+  text-align: center;
+
+}
+
+
+/* -----------SECCIÓN4 -------------*/
+
+.container_DescargaA{
+  font-family:var(--fuente-texto);
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+span{
+  font-size: 3rem;
+  font-weight: 400;
+  color: #F9A826;
+}
+
+.btn_descarga{
+  height: 2rem;
+  padding:0 0.5rem;
+  background-color: #F9A826;
+  border-radius: 1rem;
+  border: 0.2rem solid #F9A826;
+  color: white;
+  font-weight: 600;
+}

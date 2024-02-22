@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+<!-- Fuente conforta -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>Brainy</title>
+<!-- Fuente Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+<header>
+    <div class="header_info">
+        <div class="header_info_div">    
+            <div class="header_info_text">PRODUCTO</div>
+            <div class="header_info_text">MAS +</div>
+        </div>
+        
+    </div>
+    <div class="header_title">
+        <p>brainy</p>
+    </div>
+
+</header>
+<!-- Sección 1 -->
+<div class="eslogan">
+    <p class="eslogan_text">CONTROLA,GESTIONA,ORGANIZA</p>
+</div>
+<div class="eslogan_2">
+    <p>Descubre nuestra plataforma de gestion de alumnos, explora la simplicidad y la eficacia en la gestión educativa con Brainy.</p>
+</div>
+
+    <!-- Sección 2 -->
+    <p>Agrega los alumnos  a la base de datos</p>
+    <br>
+    <br>
+
+<div class="container_central">
+    
+    <div class="container_CentralInput">
+
+    
+        <div>
+            <p>Nombre(s) del Alumno</p>
+            <input class='input_1'type="text"id="inputNombre" placeholder="Ingresa tus nombres aquí">
+        </div>
+        
+        <div>
+            <p>Apellido(s) del Alumno</p>
+            <input class="input_1" type="text" id="inputApellido" placeholder="Ingresa tus apellidos aquí">
+        </div>
+            
+        <div>
+            <p>Edad</p>
+            <input class="input_1" type="text" id="inputEdad" placeholder="Ingresa tu edad aquí">
+        </div>
+
+        <div class="container_CentralBtn">
+            <!-- <div class="container_btnS2"> -->
+                <button class='btn1' id="btnEnviar1">Ingresar Alumno</button>
+            <!-- </div> -->
+           
+            <!-- <div class="container_btnS2"> -->
+                <button class="btn1" id="borrarBaseDatos">Borrar base de datos</button>
+            <!-- </div> -->
+        </div>
+        
+
+         <!-- <div>
+            <a href="controlAlumno.html">
+                <button class="btn1">ir a control alumno</button>
+            </a>
+        </div> -->
+    </div>
+    <div class="container_CentralImagen">
+        <img src="media/img1.svg" alt="imagen organizacion">
+    </div>
+        
+        
+</div>
+    <h3>AGREGA CLASES, GRUPOS Y CALIFICACIONES</h3>
+    <br>
+    <br>
+    <!-- Sección3 -->
+<div class="container_seccion3">
+    <!-- Inscribir Alumno a Clases -->
+    <div class="container_central2">
+
+        <div class="container_InscribirClase">
+
+            <div>
+                <label class="labelS3" for="selectAlumno">Alumno:</label>
+                <select class="input_2" id="selectAlumno"></select>
+            </div>
+            <div>
+                <label class="labelS3" for="selectClase">Clase:</label>
+                <select class='input_2'  id="selectClase"></select>
+            </div>
+            <div>
+                <button class="btnS3" id="btnInscribirA">INSCRIBIR ALUMNO</button>
+            </div>
+            
+        </div>
+
+        <!-- Asignar grupo a un alumno -->
+
+        <div class="container_AsignarGrupo">
+
+            <div>
+                <label class="labelS3" for="selectAlumno3">Alumno:</label>
+                <select class="input_2" id="selectAlumno3"></select>
+            </div>
+            <div>
+                <label class="labelS3" for="selectGrupo">Grupo:</label>
+                <select class='input_2'  id="selectGrupo"></select>
+            </div>
+            <div>
+                <button class="btnS3" id="btnAsignarG">ASIGNAR GRUPO</button>
+            </div>
+            
+        </div>
+
+
+
+        <!-- Asignar calificación a clase de alumno -->
+
+        <div class="container_AsignarCalif">
+            
+            <div>
+                <label class="labelS3" for="selectAlumno2">Alumno:</label>
+                <select class="input_2" id="selectAlumno2"></select>
+            </div>
+
+            <div>
+                <label class="labelS3" for="selectClase2">Clase:</label>
+                <select class='input_2'id="selectClase2"></select>
+            </div>
+
+            <div>
+                <label class="labelS3" for="selectClase">Calificación:</label>
+                <select class='input_2'id="selectCalif"></select>
+            </div>
+            
+            <div>
+                <button class="btnS3" id="btnAsignarCalif">ASIGNAR CALIFICACION</button>
+            </div>
+            
+            </div>
+
+            <!-- <div>
+            <button id="borrarBaseDatos2">Borras Base Datos</button>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+    <!-- Tabla con los nombres y apellidos de los alumnos -->
+    <div class="render_TablaContainer">
+        <h2>Datos Alumnos Inscritos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="table_title">
+                        <h3>NOMBRES</h3>
+                        <div>
+                            <input type="text" class="table_inputB" id="inputBNombre">
+                            <button class="BtnBuscarTabla" id="btnBuscarNombre">Buscar</button>
+                        </div>
+                    </th>
+                    <th class="table_title">
+                        <h3>APELLIDOS</h3>
+                        <div>
+                            <input type="text" class="table_inputB" id="inputBApellido">
+                            <button class="BtnBuscarTabla" id="btnBuscarApellido">Buscar</button>      
+                        </div>
+                    </th>
+                    <th class="table_title">
+                        <h3>GRUPO</h3>
+                        <div>
+                            <input type="text" class="table_inputB" id="inputBGrupo">
+                            <button class="BtnBuscarTabla" id="btnBuscarGrupo">Buscar</button>        
+                        </div>
+                    </th>
+                    <th class="table_title ">
+                        <h3>CALIFICACIONES</h3>
+                        <div style="color:white">-</div>
+                    
+                    </th>
+                    <th class="table_title">
+                        <h3>PROMEDIO</h3>
+                        <div>
+                            <select class='input_PromedioOrdenar table_inputB'id="ordenarPromedio">
+                                <option value="ordenP1">Defalut</option>
+                                <option value="ordenP2">mayor a menor</option>
+                                <option value="ordenP3">menor a mayor</option>
+
+
+                            </select>
+
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuerpo">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+    
+    <!-- Sección4 -->
+<div class="container_DescargaA">
+    <p><span>¡FELICIDADES!</span></p> 
+    <br>
+        <p>Ahora descarga tu archivo json, ¡Gracias por usar Brainly!</p> 
+        <br>
+    <button id="btnDescargaJSON" class="btn_descarga">Descarga aquí tu archivo</button>
+</div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="renderizado.js"></script>
+</body>
+</html>
